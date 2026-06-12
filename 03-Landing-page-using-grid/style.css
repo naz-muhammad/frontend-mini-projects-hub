@@ -67,3 +67,163 @@ body {
     background-color: black;
     border: none;
 }
+
+/* shop category */
+
+.shop-category {
+    padding: 60px;
+}
+
+.shop-category h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1.4rem;
+    ;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+
+}
+
+.shop-card {
+    background-color: #f2f2f2;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+
+}
+
+/* Featured-Products*/
+
+.Featured-Products {
+    padding: 60px;
+}
+
+.Featured-Products h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1.4rem;
+
+}
+
+.Product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 12px;
+
+}
+
+.product-img {
+    height: 300px;
+    background: #ddd;
+    margin-bottom: 15px;
+    border-radius: 12px;
+
+}
+
+.img1 {
+    background-image: url(./images/img1.webp);
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(./images/img2.webp);
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(./images/img3.jfif);
+    background-size: cover;
+}
+
+.img4 {
+    background-image: url(./images/img4.jfif);
+    background-size: cover;
+}
+
+.img5 {
+    background-image: url(./images/img5.jfif);
+    background-size: cover;
+}
+
+.img6 {
+    background-image: url(./images/img6.jfif);
+    background-size: cover;
+}
+
+.img7 {
+    background-image: url(./images/img7.jfif);
+    background-size: cover;
+}
+
+.img8 {
+    background-image: url(./images/img8.jfif);
+    background-size: cover;
+}
+
+/* sales */
+
+.sale {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px;
+    gap: 20px;
+}
+
+.summer-sale {
+    background: #d9d9d9;
+    min-height: 250px;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.large {
+    grid-column: span 2;
+}
+
+.sale1{
+    background-image: url(./images/HeroBanner_Web-1920x667-Mid-Summer-sale.webp);
+    background-size: cover;
+}
+
+.sale2 {
+    background-image: url(/images/download\ \(3\).jfif);
+    background-size: cover;
+}
+
+.sale3 {
+    background-image: url(./images/frag_main_page_banner.webp);
+    background-size: cover;
+}
+
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: black;
+    color: white;
+   padding: 80px;
+}
+.ft h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
