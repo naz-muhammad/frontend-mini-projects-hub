@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    text-align: center;
+}
+
+textarea {
+  width: 100%;       /* Makes it fill the width of its container */
+  max-width: 600px;  /* Prevents it from getting too wide */
+  height: 200px;     /* Sets a default starting height */
+  padding: 12px;     /* Adds space inside so text doesn't touch the borders */
+  font-size: 16px;   /* Increases the text size inside the box */
+}
