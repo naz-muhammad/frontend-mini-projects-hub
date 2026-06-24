@@ -26,6 +26,7 @@ The main focus is to build real projects and improve my development skills throu
 - Registration Form: https://registra-tion-form.netlify.app
 - Bonanza UI Clone: https://bonanza-ui-clone.netlify.app
 - Landing Page Using CSS Grid: https://landing-page-using-grid.netlify.app
+- Counter App Using JavaScript DOM: 
 
 ## 📌 Goal
 
