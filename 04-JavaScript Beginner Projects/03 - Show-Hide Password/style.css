@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.container {
+    width:300px;
+    height: 200px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    margin-bottom: 1rem;
+}
+
+#password {
+    padding: 8px 16px;
+    font-size: 1rem;
+
+}
