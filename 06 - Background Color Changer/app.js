@@ -6,22 +6,22 @@ const yellow = document.querySelector(".yellowbtn")
 console.log(red);
 
 
-// red.addEventListener("click" , () => {
-//     document.body.style.backgroundColor = "red"
+red.addEventListener("click" , () => {
+    document.body.style.backgroundColor = "red"
     
-// })
+})
 
-// blue.addEventListener("click" , () => {
-//     document.body.style.backgroundColor = "blue"
+blue.addEventListener("click" , () => {
+    document.body.style.backgroundColor = "blue"
     
-// })
+})
 
-// green.addEventListener("click" , () => {
-//     document.body.style.backgroundColor = "green"
+green.addEventListener("click" , () => {
+    document.body.style.backgroundColor = "green"
     
-// })
+})
 
-// yellow.addEventListener("click" , () => {
-//     document.body.style.backgroundColor = "yellow"
+yellow.addEventListener("click" , () => {
+    document.body.style.backgroundColor = "yellow"
    
-// })
+})
