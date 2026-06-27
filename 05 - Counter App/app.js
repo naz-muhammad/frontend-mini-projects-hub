@@ -13,9 +13,11 @@ increase.addEventListener("click" , () => {
 })
 
 decrease.addEventListener("click" , () => {
-    clickCount--;
+    if( clickCount !== 0 ) {
+        clickCount--;
     counter.textContent = clickCount;
-    container.style.backgroundColor = "#44444438"
+    container.style.backgroundColor = "#44444459"
+    }
 })
 
 reset.addEventListener("click" , () => {
