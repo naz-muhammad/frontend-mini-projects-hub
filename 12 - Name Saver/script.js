@@ -34,3 +34,22 @@ clearBtn.addEventListener('click' , () => {
 })
 
 // console.log(localStorage.getItem('name'))
+
+// enable the Enter and Delete button to do the work of save and clear
+
+nameInput.addEventListener( 'keydown' , (event) => {
+
+    if ( event.key === "Enter") {
+
+        saveBtn.click(
+            
+        )
+        
+    } 
+
+    if ( event.key === "Escape" || event.key === "Delete") {
+
+        clearBtn.click()
+        
+    }
+});
