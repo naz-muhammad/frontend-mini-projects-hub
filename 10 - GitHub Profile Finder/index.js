@@ -21,6 +21,10 @@ if ( name === '' ) {
 
 fetch(`https://api.github.com/users/${name}`)
 .then( ( response ) => {
+    if (!response.ok) {
+    alert('User not found')
+    return
+}
     return response.json()
 })
 .then( ( data ) => {
