@@ -1,35 +1,57 @@
 # 🔍 GitHub Profile Finder
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![GitHub API](https://img.shields.io/badge/GitHub_API-181717?style=for-the-badge&logo=github&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/GitHub%20API-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub API">
+</p>
 
-A modern and responsive **GitHub Profile Finder** built using **HTML**, **CSS**, and **JavaScript**.
+<p align="center">
+A modern and responsive <strong>GitHub Profile Finder</strong> built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> using the <strong>GitHub REST API</strong>.
+</p>
 
-Search any GitHub username and instantly view profile information using the **GitHub REST API**.
+<p align="center">
+Search any GitHub username and instantly view profile information in a clean and responsive interface.
+</p>
 
 ---
 
 ## 🚀 Live Demo
 
-🌐 https://github-profile-finder-by-naz.netlify.app
+🌐 **https://github-profile-finder-by-naz.netlify.app**
+
+---
+
+## 📂 Repository
+
+💻 **https://github.com/naz-muhammad/frontend-mini-projects-hub**
 
 ---
 
 ## 📸 Preview
 
-### Desktop
+<table align="center">
+<tr>
+<td align="center"><strong>Desktop View</strong></td>
+<td align="center"><strong>Mobile View</strong></td>
+<td align="center"><strong>Search Result</strong></td>
+</tr>
 
-![Desktop Preview](./assets/github1.png)
+<tr>
+<td width="33%">
+<img src="./assets/github1.png" alt="Desktop View">
+</td>
 
-### Mobile
+<td width="33%">
+<img src="./assets/github2.png" alt="Mobile View">
+</td>
 
-![Mobile Preview](./assets/github2.png)
-
-### Search Result
-
-![Search Result](./assets/github3.png)
+<td width="33%">
+<img src="./assets/github3.png" alt="Search Result">
+</td>
+</tr>
+</table>
 
 ---
 
@@ -37,15 +59,15 @@ Search any GitHub username and instantly view profile information using the **Gi
 
 - 🔍 Search GitHub users by username
 - 👤 Display profile avatar
-- 🏷️ Username
-- 📝 User bio
+- 🏷️ Display username
+- 📝 Display user bio (when available)
 - 👥 Followers count
 - ➕ Following count
-- 📦 Public repositories
+- 📦 Public repositories count
 - ❌ Invalid username handling
-- 📱 Responsive UI
+- 📱 Fully responsive design
 - ⚡ Fast and lightweight
-- 🌐 Real-time data using GitHub REST API
+- 🌐 Powered by the GitHub REST API
 
 ---
 
@@ -61,31 +83,33 @@ Search any GitHub username and instantly view profile information using the **Gi
 
 ## 🧠 What I Learned
 
-Building this project improved my understanding of:
+This project helped me improve my understanding of:
 
 - REST APIs
 - Fetch API
-- Asynchronous JavaScript
 - Promises
+- Asynchronous JavaScript
 - Response Object
 - JSON Parsing
 - Dynamic DOM Manipulation
 - Template Literals
 - Conditional Rendering
 - Error Handling
-- Responsive Design
+- Responsive Web Design
 
 ---
 
-## 🔗 GitHub API
+## 🔗 GitHub REST API
 
-Endpoint:
+This project uses GitHub's public REST API.
+
+**Endpoint**
 
 ```text
 https://api.github.com/users/{username}
 ```
 
-Example:
+**Example**
 
 ```text
 https://api.github.com/users/octocat
@@ -93,7 +117,7 @@ https://api.github.com/users/octocat
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 GitHub Profile Finder
@@ -113,25 +137,22 @@ GitHub Profile Finder
 
 ## 💻 Getting Started
 
-Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/naz-muhammad/frontend-mini-projects-hub.git
 ```
 
-Open the project folder.
-
-Navigate to:
+### 2. Navigate to the project
 
 ```text
-10 - GitHub Profile Finder
+frontend-mini-projects-hub
+└── 10 - GitHub Profile Finder
 ```
 
-Run:
+### 3. Open the project
 
-```text
-index.html
-```
+Simply open **index.html** in your browser.
 
 No installation or dependencies are required.
 
@@ -139,22 +160,26 @@ No installation or dependencies are required.
 
 ## 📬 Connect With Me
 
-**GitHub**
+<p>
+<a href="https://github.com/naz-muhammad">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
 
-https://github.com/naz-muhammad
-
-**LinkedIn**
-
-https://www.linkedin.com/in/naz-muhammad/
+<a href="https://www.linkedin.com/in/naz-muhammad/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
+</p>
 
 ---
 
 ## ⭐ Support
 
-If you like this project, consider giving the repository a **Star ⭐**.
+If you found this project helpful, please consider giving the repository a **Star ⭐**.
 
-It helps others discover my work and motivates me to continue building more projects.
+Your support motivates me to continue building and sharing more projects.
 
 ---
 
-**Made with ❤️ by Naz Muhammad**~
+<p align="center">
+Made with ❤️ by <strong>Naz Muhammad</strong>
+</p>
