@@ -81,3 +81,11 @@ fetch(`https://api.github.com/users/${name}`)
 })
 
 })
+
+searchInput.addEventListener('keydown' , (e) => {
+
+    if ( e.key === 'Enter') {
+        searchBtn.click()
+    }
+
+})
