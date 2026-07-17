@@ -40,11 +40,11 @@ Search any GitHub username and instantly view profile information in a clean and
 
 <tr>
 <td width="33%">
-<img src="./assets/github1.png" alt="Desktop View">
+<img src="./assets/github1.png" alt="Search Result">
 </td>
 
 <td width="33%">
-<img src="./assets/github2.png" alt="Mobile View">
+<img src="./assets/github2.png" alt="Search Result">
 </td>
 
 <td width="33%">
