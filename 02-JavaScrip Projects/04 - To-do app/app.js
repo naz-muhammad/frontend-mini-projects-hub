@@ -9,6 +9,7 @@ function newTask( text ) {
     const deleteBtn = document.createElement("button")
 
     task.classList.add("task")
+    deleteBtn.classList.add("delete-btn")
 
     p.textContent = text ;
     deleteBtn.innerText = "Delete" ;
