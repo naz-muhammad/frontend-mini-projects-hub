@@ -1,38 +1,5 @@
 # Dev Project Hub
 
-This repository will contain my mini frontend and JavaScript projects as I progress in my learning journey.
+This repository will contain my mini frontend projects as I progress in my learning journey.
 
 The main focus is to build real projects and improve my development skills through practice.
-
-
-## 🎯 Purpose
-
-- Learn HTML, CSS, and JavaScript through projects  
-- Improve frontend fundamentals  
-- Build small, focused applications  
-- Develop consistency through building  
-- Prepare for full-stack development (in separate repositories)  
-
-## 🧠 Approach
-
-- Learn by building, not just studying  
-- Each project will focus on one concept at a time  
-- Projects will be small and independent  
-- Focus is on improvement, not perfection  
-
-
-## 🚀 Projects
-
-- Registration Form: https://registra-tion-form.netlify.app
-- Bonanza UI Clone: https://bonanza-ui-clone.netlify.app
-- Landing Page Using CSS Grid: https://landing-page-using-grid.netlify.app
-- Counter App Using JavaScript DOM: 
-
-## 📌 Goal
-
-To strengthen my frontend development skills by consistently building mini projects and improving step by step.
-
-
-## 🔗 Connect
-
-- LinkedIn: https://www.linkedin.com/in/naz-muhammad
