@@ -26,6 +26,12 @@ const App = () => {
     setDetailInput("");
   };
 
+  const deleteHandler = (idx) => {
+    const copyTask = [...task]
+    copyTask.splice(idx , 1)
+    setTask(copyTask)
+  }
+
   return (
     <div className="min-h-screen bg-neutral-900 text-white p-6">
       <div className="max-w-7xl mx-auto lg:flex gap-8">
@@ -72,12 +78,17 @@ const App = () => {
                 return (
                   <div
                     key={idx}
-                    className="bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover rounded-2xl w-46 h-58 p-6 text-black"
-                  >
+                    className="bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] relative bg-cover rounded-2xl w-46 h-58 p-6 text-black"
+                    >
                     <div>
                       <h3 className='text-lg font-bold leading-tight'>{t.inputValue}</h3>
-                <p className='mt-2 text-sm leading-5 text-gray-600'>{t.detailInput}</p>
+                      <p className='mt-2 text-sm leading-5 text-gray-600'>{t.detailInput}</p>
                     </div>
+                    <button className="cursor-pointer absolute bottom-0 right-0 pr-4 pb-4"
+                     onClick={(idx) => {
+                      deleteHandler(idx)
+                     }}
+                    >✕</button>
                   </div>
                 );
               })
