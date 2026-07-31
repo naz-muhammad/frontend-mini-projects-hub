@@ -13,6 +13,7 @@ const App = () => {
       return;
     }
 
+   
     setTask((prevTask) => [
       ...prevTask,
       {
@@ -28,12 +29,8 @@ const App = () => {
   return (
     <div className="min-h-screen bg-neutral-900 text-white p-6">
       <div className="max-w-7xl mx-auto lg:flex gap-8">
-
         {/* Left Side */}
-        <form
-          onSubmit={handleSubmit}
-          className="lg:w-1/2 flex flex-col gap-5"
-        >
+        <form onSubmit={handleSubmit} className="lg:w-1/2 flex flex-col gap-5">
           <h1 className="text-4xl font-bold">Add Notes</h1>
 
           <input
@@ -64,27 +61,29 @@ const App = () => {
         <div className="lg:w-1/2 mt-10 lg:mt-0">
           <h1 className="text-4xl font-bold mb-6">Recent Notes</h1>
           <div className="flex gap-4  overflow-x-auto scrollbar-none lg:flex-wrap ">
-          {
-            task.length === 0 ? (
-            <div className="w-full border-2 rounded border-dashed border-neutral-50 ">
-              <h2 className="text-center py-6">Notes will be display here...</h2>
+            {task.length === 0 ? (
+              <div className="w-full border-2 rounded border-dashed border-neutral-50 ">
+                <h2 className="text-center py-6">
+                  Notes will be display here...
+                </h2>
               </div>
-            ):
-            task.map( ( t , idx ) => {
-
-              return <div key={idx} className="bg-white rounded-2xl w-42 h-58 p-4 text-black">
-                      <div>
-                        <h2 className="text-2xl font-semibold">{t.inputValue}</h2>
-                        <p className="text-gray-600">{t.detailInput}</p>
-                      </div>
-                     </div>
-              
-            })
-            
-          }
+            ) : (
+              task.map((t, idx) => {
+                return (
+                  <div
+                    key={idx}
+                    className="bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover rounded-2xl w-46 h-58 p-6 text-black"
+                  >
+                    <div>
+                      <h3 className='text-lg font-bold leading-tight'>{t.inputValue}</h3>
+                <p className='mt-2 text-sm leading-5 text-gray-600'>{t.detailInput}</p>
+                    </div>
+                  </div>
+                );
+              })
+            )}
           </div>
         </div>
-
       </div>
     </div>
   );
