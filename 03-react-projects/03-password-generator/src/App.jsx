@@ -1,4 +1,4 @@
-import React, { useState , useCallback, useEffect } from 'react'
+import React, { useState , useCallback, useEffect, useRef } from 'react'
 
 const App = () => {
 
@@ -30,7 +30,14 @@ const App = () => {
   useEffect(()=>{
     passwordGenerator()
   },[charAllowed , length , numberAllowed , passwordGenerator])
+
+  function handleCopyPassword() {
+    // console.log(window);
+    window.navigator.clipboard.writeText(password)
+    passwordRef.current.select()
+  }
   
+  const passwordRef = useRef(null)
 
   return (
     <>
@@ -38,10 +45,13 @@ const App = () => {
         <div className='flex justify-between'>
           <input type="text" placeholder='password'
           className='w-full border border-solid border-white rounded-l-lg px-2 py-2'
+          ref={passwordRef}
           value={password}
           readOnly
         />
-        <button className='border border-solid border-white rounded-r-lg px-2 py-2 bg-blue-600'>Copy</button>
+        <button className='border border-solid border-white rounded-r-lg px-2 py-2 bg-blue-600'
+          onClick={handleCopyPassword}
+        >Copy</button>
         </div>
 
         <div  className='flex gap-4'>
