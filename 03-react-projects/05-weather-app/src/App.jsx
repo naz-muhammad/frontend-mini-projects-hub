@@ -1,15 +1,12 @@
-import React from 'react'
-import Weather from './components/Weather'
+import React from "react";
+import Weather from "./components/Weather";
 
 const App = () => {
-
   return (
-
-    <div>
+    <div className="min-h-screen w-full flex justify-center items-start sm:items-center bg-[#212121]">
       <Weather />
     </div>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
