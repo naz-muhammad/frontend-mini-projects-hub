@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [searchInput, setSearchInput] = useState("");
+  const [error , setError] = useState('')
 
   async function getWeatherData(city) {
     if (!city.trim()) {
@@ -16,6 +17,7 @@ const Weather = () => {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error("Request failed");
+        
       }
 
       const data = await response.json();
@@ -23,8 +25,12 @@ const Weather = () => {
 
       setWeatherData(data);
       setSearchInput("");
+      setError('')
+
     } catch (error) {
+      setWeatherData(null)
       console.log(error.message);
+      setError(error.message)
     }
   }
 
@@ -45,17 +51,31 @@ const Weather = () => {
             setSearchInput(e.target.value);
           }}
           placeholder="Enter city..."
+          onKeyDown={(e)=>{
+            if (e.key === "Enter") {
+              getWeatherData(searchInput)
+            }
+          }}
         />
 
         <button
           onClick={() => {
             getWeatherData(searchInput);
           }}
+
           className="w-full text-white sm:w-auto bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-md font-medium transition"
         >
           Search
         </button>
       </div>
+      
+      {
+        error && (
+          <div>
+            <p className="mt-4 w-full rounded-md border border-red-500/50 bg-red-950/40 px-4 py-3 text-red-300"> {error} </p>
+          </div>
+        )
+      }
 
       {weatherData && (
         <div className="mt-8 w-full bg-[#242424] rounded-xl p-5 sm:p-6 shadow-xl text-center">
