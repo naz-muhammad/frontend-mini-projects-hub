@@ -1,16 +1,137 @@
-# React + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple weather application built with React using the OpenWeather API.
 
-Currently, two official plugins are available:
+## 🔄 Application Flow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```text
+USER
+ │
+ │ types city
+ ▼
+searchInput state
+ │
+ │ clicks Search
+ ▼
+getWeatherData(city)
+ │
+ ▼
+fetch(url)
+ │
+ │ network request
+ ▼
+SERVER / WEATHER API
+ │
+ ▼
+Response object
+ │
+ ├── response.ok
+ │      │
+ │      ├── false
+ │      │    ↓
+ │      │   throw Error
+ │      │    ↓
+ │      │   catch
+ │      │    ↓
+ │      │   error state
+ │      │
+ │      └── true
+ │           ↓
+ │      response.json()
+ │           ↓
+ │      JavaScript object
+ │           ↓
+ │      setWeatherData(data)
+ │           ↓
+ │      React schedules a re-render
+ │           ↓
+ │      WeatherCard receives weatherData
+ │           ↓
+ ▼
+USER SEES WEATHER
+```
 
-## React Compiler
+## ⏳ Loading Flow
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```text
+Search starts
+     ↓
+setLoading(true)
+     ↓
+Loading UI appears
+     ↓
+API request finishes
+     ↓
+setLoading(false)
+     ↓
+Weather data OR error is displayed
+```
 
-## Expanding the ESLint configuration
+## 🧠 What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### React
+
+* Components
+* JSX
+* `useState`
+* Controlled inputs
+* Event handling
+* Conditional rendering
+* Props
+* Passing functions as props
+* Component decomposition
+* State-driven UI
+* Loading and error states
+
+### JavaScript
+
+* `async/await`
+* Promises
+* `fetch()`
+* `try/catch`
+* Template literals
+* Functions
+* Object and array access
+* `.trim()`
+* Error handling
+
+### API Concepts
+
+* API endpoints
+* Query parameters
+* API keys
+* HTTP responses
+* `response.ok`
+* `response.json()`
+* JSON → JavaScript object
+* API error handling
+* Loading states
+* Network requests
+
+## 🏗️ Data Flow
+
+```text
+Input
+  ↓
+searchInput
+  ↓
+getWeatherData()
+  ↓
+fetch()
+  ↓
+Weather API
+  ↓
+response
+  ↓
+response.json()
+  ↓
+weatherData
+  ↓
+React re-render
+  ↓
+WeatherCard
+```
+
+## 🎯 Main Lesson
+
+> **Input → State → API Request → Response → State Update → UI**
